@@ -103,7 +103,7 @@ class Powerschool
   get :student, :ws, '/student/:student_id'
   get :students, :ws, '/student'
   get :school_teachers, :ws, '/school/:school_id/staff'
-  get :school_students, :ws, '/school/:school_id/student'
+  get :school_students, :ws, '/school/:school_id/student?expansions=addresses,phones,contact,contact_info'
   get :school_sections, :ws, '/school/:school_id/section'
   get :school_courses, :ws, '/school/:school_id/course'
   get :school_terms, :ws, '/school/:school_id/term'
