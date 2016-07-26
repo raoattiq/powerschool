@@ -108,7 +108,7 @@ class Powerschool
   get :school_courses, :ws, '/school/:school_id/course'
   get :school_terms, :ws, '/school/:school_id/term'
   get :section_enrollment, :ws, '/section/:section_id/section_enrollment'
-  get :attendance, :ws, '/schema/table/attendance?projection=id,studentid,attendance_codeid,att_date'
+  
 
   get :assignment, :ptg, 'assignment/:id'
   post :post_section_assignment, :ptg, '/section/:section_id/assignment'
@@ -120,6 +120,7 @@ class Powerschool
   get :tables, '/ws/schema/table'
   get :table_metadata, '/ws/schema/table/:table/metadata'
   get :area_table, '/ws/schema/area/:area/table'
+  get :attendance, '/ws/schema/table/attendance?projection=id,studentid,schoolid,attendance_codeid,att_date'
 
 
   def start_year
