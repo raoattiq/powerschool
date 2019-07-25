@@ -4,7 +4,6 @@ This ruby gem is for accessing the Pearson Powerschool API.
 Usage:
 
 Add to your Gemfile:
-
   gem 'powerschool', git: 'git@github.com/tomk32/powerschool.git'
 
   powerschool = Powerschool.new({'base_uri' => 'http://powerschool.example.com', 'id' => 'my id', 'secret' => 'my secret'})
