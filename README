@@ -1,7 +1,6 @@
 
 This ruby gem is for accessing the Pearson Powerschool API.
 
-
 Usage:
 
 Add to your Gemfile:
